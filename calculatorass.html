@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="bootstrap/bootstrap-5.3.0-alpha3-dist.zip"> -->
+
+</head>
+<body>
+    <div class="cal-body shadow-lg">
+        <div class="nav">
+            <div class="nav-1">
+                <i class="icofont-calculator"></i>
+                <span class="nav-text">Calculator</span>
+            </div>     
+        </div>
+        <div class="input-screen">
+            <h3 id="display"></h3>
+        </div>
+        <div class="btn-container">
+            <div class="btn btn-grey" onclick="operator('%')">%</div>
+            <div class="btn btn-grey" onclick="clearResult()">CE</div>
+            <div class="btn btn-grey" onclick="clearResult()">C</div>
+            <div class="btn btn-grey" onclick="operator('/')">/</div>
+        </div>
+        <div class="btn-container">
+            <div class="btn" onclick="show(7)">7</div>
+            <div class="btn" onclick="show(8)">8</div>
+            <div class="btn" onclick="show(9)">9</div>
+            <div class="btn btn-grey" onclick="operator('*')">x</div>
+        </div>
+        <div class="btn-container">
+            <div class="btn" onclick="show(4)">4</div>
+            <div class="btn" onclick="show(5)">5</div>
+            <div class="btn" onclick="show(6)">6</div>
+            <div class="btn btn-grey" onclick="operator('-')"><i class="icofont-minus"></i></div>
+        </div>
+        <div class="btn-container">
+            <div class="btn" onclick="show(1)">1</div>
+            <div class="btn" onclick="show(2)">2</div>
+            <div class="btn" onclick="show(3)">3</div>
+            <div class="btn btn-grey" onclick="operator('+')">+</div>
+        </div>
+        <div class="btn-container">
+            <div class="btn" onclick="delLastNum()"><i class="icofont-long-arrow-left"></i></div>
+            <div class="btn" onclick="show(0)">0</div>
+            <div class="btn" onclick="show('.')">.</div>
+            <div class="btn btn-blue" onclick="showResult(symbol)">=</div>
+        </div>
+    </div>
+</body>
+<script src="calculator.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
+</html>
+
